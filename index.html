@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us">
+<head>
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+   <script src="/js/jquery.stoc.js"></script>
+   <!-- <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'> -->
+
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="cleartype" content="on">
+
+   <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>Sending mail via Anchor's servers</title>
+   <meta name="author" content="Barney Desmond for Anchor" />
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+   <script type="text/javascript" language="JavaScript">
+      $(document).ready(function() {
+         $("#TOC").stoc({
+            search: "#post"
+         });
+      })
+   </script>
+</head>
+<body>
+
+<div class="site">
+  <div class="title">
+    <a href="http://knowledgebase.beta.anchortrove.com/index.html"><img src="/img/anchor_logo_transparent_240x80.png" alt="Anchor logo" width="120" height="40" style="display: block;" /></a>
+    <h1><a href="http://knowledgebase.beta.anchortrove.com/index.html">Support Knowledgebase</a></h1>
+  </div>
+
+  <div class="content">
+  <div id="post">
+  <h1>Sending mail via Anchor's servers</h1>
+
+  <p>In general we recommend using the outgoing mail server provided by your ISP, since it generally requires less configuration and works without issue.</p>
+
+<p>There are some cases, however, where this doesn&#39;t work out so well. These usually are because:</p>
+
+<ul>
+<li>Some ISPs don&#39;t offer an outgoing mail server</li>
+<li>The ISP&#39;s outgoing mail server is sub-standard</li>
+<li>The device used for mail frequently moves between networks</li>
+</ul>
+
+<p>For these cases you can, with a little extra configuration, use Anchor as your outgoing mail server.</p>
+
+<h2 id="toc_0">Settings to use</h2>
+
+<table><thead>
+<tr>
+<th>Setting name</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Hostname</td>
+<td>smtp.anchor.net.au</td>
+</tr>
+<tr>
+<td>Port</td>
+<td>587</td>
+</tr>
+<tr>
+<td>Encryption</td>
+<td>TLS</td>
+</tr>
+<tr>
+<td>Username/Password</td>
+<td>Same as your incoming username (ie. your email address/password)</td>
+</tr>
+</tbody></table>
+
+<p>Port 587 is the standard for mail submission, but it may be blocked from some networks. In those cases, there alternatives available:</p>
+
+<ul>
+<li>Port 25 (with TLS encryption)</li>
+<li>Port 465 (with SSL encryption)</li>
+</ul>
+
+<h2 id="toc_1">Client-Specific Guides</h2>
+
+<ul>
+<li><a href="/sending-email-via-anchor-servers/outlook-2007/index.html">Outlook 2007</a></li>
+<li><a href="/sending-email-via-anchor-servers/windows-mail">Windows Mail</a></li>
+<li><a href="/sending-email-via-anchor-servers/thunderbird">Thunderbird</a></li>
+<li><a href="/sending-email-via-anchor-servers/entourage-2008">Entourage 2008</a></li>
+<li><a href="/sending-email-via-anchor-servers/macmail">Mac Mail</a></li>
+</ul>
+
+</div>
+
+
+  </div>
+
+  <div class="footer">
+    © Anchor
+  </div>
+
+
+</div> <!-- end the site -->
+</body>
+</html>
+
